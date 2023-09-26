@@ -28,25 +28,23 @@
             <!-- >>> Pokemons Here <<<< -->
         </ol>
         
-        <div id="vis-modal" class="modal">
-            <div class="cabecalho-modal">
-                <div class="cabecalho-modal">
-                    <h1 class="cabecalho-titulo-modal">Informações</h1>
-                    <span class="cabecalho-modal-fechar" onclick="fecharModal('vis-modal')">X</span>
+
+        <div class="modal" id="myModal" >
+            <div class="modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Informações</h5>
                 </div>
-                <div class="corpo-modal">
-                    <span>
-                    Lorem ipsum dolor sit amet. Est blanditiis beatae qui rerum minima sed voluptatem rerum aut aspernatur aperiam. 
-                    Lorem ipsum dolor sit amet. Est blanditiis beatae qui rerum minima sed voluptatem rerum aut aspernatur aperiam.
-                    Lorem ipsum dolor sit amet. Est blanditiis beatae qui rerum minima sed voluptatem rerum aut aspernatur aperiam.
-                    Lorem ipsum dolor sit amet. Est blanditiis beatae qui rerum minima sed voluptatem rerum aut aspernatur aperiam.
-                    </span>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet. Qui odit sunt non numquam accusamus qui quasi accusantium nam quia odio?
                 </div>
-                <div class="rodape-modal">
-                    <button class="btn-outline-success" onclick="fecharModal('vis-modal')">Fechar</button>
+                <div class="modal-footer">
+                  <button type="button" class="btnFechar" onclick="mudarModal()">Fechar</button>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
+        
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More

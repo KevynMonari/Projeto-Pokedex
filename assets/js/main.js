@@ -11,9 +11,10 @@ function loadPokemonItens(offset, limit){
             <li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
-                <button class="btn-outline-success" onclick="abrirModal('vis-modal')">i</button>
+                <button type="button" class="btnAbrir" onclick="mudarModal()">
+                    Info
+                </button>
 
-                
 
 
                 <div class="detail">

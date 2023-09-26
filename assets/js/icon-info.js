@@ -1,17 +1,12 @@
-function abrirModal(carregarModal){
-    // console.log('Funcionando');
 
-    let modal = document.getElementById(carregarModal);
+function mudarModal(){
 
-    modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
+    const modal = document.querySelector('.modal')
+    const actualStyle = modal.style.display
 
-function fecharModal(fecharModal){
-    // console.log('Fechando');
-
-    let modal = document.getElementById(fecharModal);
-
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    if(actualStyle == 'block'){
+        modal.style.display = 'none'
+    }else{
+        modal.style.display = 'block'
+    }
 }
