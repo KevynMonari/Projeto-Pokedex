@@ -11,11 +11,26 @@ function loadPokemonItens(offset, limit){
             <li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
-                <button type="button" class="btnAbrir" onclick="mudarModal()">
+                <button type="button" class="btnAbrir" onclick="mudarModal(${pokemon.number})">
                     Info
                 </button>
 
-
+                <div class="modal" id="myModal" >
+                <div class="modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Informações</h5>
+                    </div>
+                    <div class="modal-body">
+                        <span>Nome: ${pokemon.name}</span>
+                        <span>Número na pokedex: ${pokemon.number}</span>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btnFechar" onclick="mudarModal()">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 
                 <div class="detail">
                     <ol class="types">

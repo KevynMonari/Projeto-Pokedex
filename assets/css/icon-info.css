@@ -86,3 +86,11 @@
     margin-top: 3%;
     margin: 0 auto;
 }
+
+.pokemonNome{
+    text-transform: capitalize;
+}
+
+.pokemonHab{
+    text-transform: capitalize;
+}
