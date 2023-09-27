@@ -16,9 +16,9 @@ function getPokemonAbilities(pokemonId, modal) {
             document.querySelector('.modal-title').textContent = `Informações sobre ${name}`;
             document.querySelector('.modal-body').innerHTML = `
                 <span class="pokemonNome">Nome: ${name}</span>
-                <span>Número da Pokedex: ${number}</span>
+                <span class="pokemonNum">Número da Pokedex: ${number}</span>
                 <span class="pokemonHab">Habilidades: ${abilities}</span>
-                <span>Peso: ${weight} kg</span>
+                <span class="pokemonPeso">Peso: ${weight} kg</span>
             `;
 
             // Exibir a modal
